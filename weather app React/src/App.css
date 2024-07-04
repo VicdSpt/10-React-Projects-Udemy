@@ -1,0 +1,78 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+  background: #1e48aa;
+  padding: 0 10px;
+}
+
+main {
+  max-width: 375px;
+  min-height: 380px;
+  margin: 100px Auto 0;
+  border-radius: 10px;
+  padding: 30px 10px 0px;
+  background-color: white;
+  color: black;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+}
+
+.loader-container {
+  background-color: white;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.4s ease-out, opacity 0.4s ease-out;
+}
+.loader-container.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.city-name{
+  font-family: Latp, sans-serif;
+  font-size: 50px;
+  color: black;
+}
+.country-name{
+  font-family: Latp, sans-serif;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 45px;
+  font-weight: 700;
+  color: black;
+}
+.temperature{
+  font-family: Latp, sans-serif;
+  font-size: 65px;
+  font-weight: 700;
+  color: black;
+}
+.info-icon{
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.error-information{
+  margin-bottom: 20px;
+}
